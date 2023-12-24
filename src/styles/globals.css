@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu_effect {
+    @apply after:mt-1 after:block after:border-b-4 after:border-white after:transition after:ease-in-out after:delay-100 after:scale-x-0 hover:after:scale-x-100 hover:after:origin-top ;
+  }
+  .img_banner {
+    @apply bg-[url('https://images.unsplash.com/photo-1556691421-cf15fe27a0b6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat -skew-y-6 w-full h-full -translate-y-[12%];
+  }
+  .select_styling{
+    @apply px-4 py-2 w-[15vw] rounded-full bg-transparent border border-slate-800 flex justify-between appearance-none bg-no-repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-position-x: 90%;
+  background-position-y: 50%;
+  }
+}
